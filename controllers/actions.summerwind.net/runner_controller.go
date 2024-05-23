@@ -816,7 +816,7 @@ func newRunnerPodWithContainerMode(containerMode string, template corev1.Pod, ru
 	}
 
 	if runnerSpec.DockerVarRunVolumeSizeLimit == nil {
-		runnerSpec.DockerVarRunVolumeSizeLimit = resource.NewScaledQuantity(1, resource.Mega)
+		runnerSpec.DockerVarRunVolumeSizeLimit = resource.NewScaledQuantity(10, resource.Mega)
 
 	}
 
